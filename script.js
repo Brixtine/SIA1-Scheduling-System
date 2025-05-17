@@ -155,6 +155,7 @@ function showLoginPage() {
     viewAllSched.style.display = "none";
     lobby.style.display = "none";
     logoutBtn.classList.remove("hidden");
+    logoutBtn.textContent = "Back";
     clearInputErrors();
 }
 
@@ -165,7 +166,7 @@ function showSchedulePage(studentId) {
     viewAllSched.style.display = "none";
     lobby.style.display = "none";
     logoutBtn.classList.remove("hidden");
-    
+    logoutBtn.textContent = "Log out";
     if (studentId) {
         showStudentSchedule(studentId);
     }
@@ -178,6 +179,7 @@ function showAdminPage() {
     viewAllSched.style.display = "block";
     lobby.style.display = "none";
     logoutBtn.classList.remove("hidden");
+    logoutBtn.textContent = "Log out";
     displaySchedule(yearLevelSelect.value);
 }
 
